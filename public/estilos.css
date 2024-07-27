@@ -1,0 +1,205 @@
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    background-color: #000; /* Fundo preto */
+    color: #ddd; /* Texto em geral claro */
+    font-family: 'Calibri', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #222;
+    padding: 0;
+    text-align: center;
+    border-bottom: 2px solid #444;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+main {
+    padding: 20px;
+}
+
+.category {
+    margin-bottom: 40px;
+    cursor: pointer;
+    background-color: #222;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 15px;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    outline: none;
+}
+
+.category:focus,
+.category:active {
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+}
+
+.category:hover {
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #e90;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: none;
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+    max-height: 0;
+}
+
+li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    color: #f00; /* Links vermelhos */
+    text-decoration: none;
+    font-size: 1.1em;
+    flex: 1;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.copy-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.copy-btn img {
+    width: 20px;
+    height: auto;
+}
+
+.copy-btn:hover {
+    opacity: 0.8;
+}
+
+.favorite-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.favorite-btn img {
+    width: 20px;
+    height: auto;
+}
+
+.favorite-btn:hover {
+    opacity: 0.8;
+}
+
+input {
+    font-family: 'Calibri', sans-serif;
+    background-color: #222;
+    color: #ddd;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+    transition: box-shadow 0.3s;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+#message {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
+    font-size: 1em;
+}
+
+.hidden {
+    display: none;
+}
+
+.category ul {
+    display: block; /* Tornar a lista visível */
+}
+
+.category li img {
+    width: 24px; /* Ajuste conforme o tamanho do ícone */
+    height: auto;
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+.category .file-name {
+    color: #ff0; /* Nome dos arquivos em amarelo */
+}
+
+.history {
+    margin-top: 40px;
+    background-color: #222;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.history ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.history li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.history li a {
+    color: #f00;
+    text-decoration: none;
+    font-size: 1.1em;
+    flex: 1;
+}
+
+.history li a:hover {
+    text-decoration: underline;
+}

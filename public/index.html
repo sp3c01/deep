@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links com Copiar</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <img src="icons/logo1.gif" alt="Logo Links com Copiar" class="logo">
+    </header>
+    <main>
+        <section class="category">
+            <h2>Categoria 1</h2>
+            <ul>
+                <li>
+                    <a href="https://example.com/1" target="_blank">Link 1</a>
+                    <button class="copy-btn" data-clipboard-text="https://example.com/1">
+                        <img src="icons/copyicon.png" alt="Copiar">
+                    </button>
+                    <button class="favorite-btn" data-link="https://example.com/1">
+                        <img src="icons/favoriteicon1.png" alt="Favoritar">
+                    </button>
+                </li>
+                <li>
+                    <a href="https://example.com/2" target="_blank">Link 2</a>
+                    <button class="copy-btn" data-clipboard-text="https://example.com/2">
+                        <img src="icons/copyicon.png" alt="Copiar">
+                    </button>
+                    <button class="favorite-btn" data-link="https://example.com/2">
+                        <img src="icons/favoriteicon1.png" alt="Favoritar">
+                    </button>
+                </li>
+                <li>
+                    <a href="https://example.com/3" target="_blank">Link 3</a>
+                    <button class="copy-btn" data-clipboard-text="https://example.com/3">
+                        <img src="icons/copyicon.png" alt="Copiar">
+                    </button>
+                    <button class="favorite-btn" data-link="https://example.com/3">
+                        <img src="icons/favoriteicon1.png" alt="Favoritar">
+                    </button>
+                </li>
+                <li>
+                    <a href="https://example.com/4" target="_blank">Link 4</a>
+                    <button class="copy-btn" data-clipboard-text="https://example.com/4">
+                        <img src="icons/copyicon.png" alt="Copiar">
+                    </button>
+                    <button class="favorite-btn" data-link="https://example.com/4">
+                        <img src="icons/favoriteicon1.png" alt="Favoritar">
+                    </button>
+                </li>
+                <li>
+                    <a href="https://example.com/5" target="_blank">Link 5</a>
+                    <button class="copy-btn" data-clipboard-text="https://example.com/5">
+                        <img src="icons/copyicon.png" alt="Copiar">
+                    </button>
+                    <button class="favorite-btn" data-link="https://example.com/5">
+                        <img src="icons/favoriteicon1.png" alt="Favoritar">
+                    </button>
+                </li>
+            </ul>
+        </section>
+        <section class="category">
+            <h2>Categoria 2</h2>
+            <ul>
+                <li>
+                    <a href="https://example.com/6" target="_blank">Link 6</a>
+                    <button class="copy-btn" data-clipboard-text="https://example.com/6">
+                        <img src="icons/copyicon.png" alt="Copiar">
+                    </button>
+                    <button class="favorite-btn" data-link="https://example.com/6">
+                        <img src="icons/favoriteicon1.png" alt="Favoritar">
+                    </button>
+                </li>
+                <li>
+                    <a href="https://example.com/7" target="_blank">Link 7</a>
+                    <button class="copy-btn" data-clipboard-text="https://example.com/7">
+                        <img src="icons/copyicon.png" alt="Copiar">
+                    </button>
+                    <button class="favorite-btn" data-link="https://example.com/7">
+                        <img src="icons/favoriteicon1.png" alt="Favoritar">
+                    </button>
+                </li>
+                <li>
+                    <a href="https://example.com/8" target="_blank">Link 8</a>
+                    <button class="copy-btn" data-clipboard-text="https://example.com/8">
+                        <img src="icons/copyicon.png" alt="Copiar">
+                    </button>
+                    <button class="favorite-btn" data-link="https://example.com/8">
+                        <img src="icons/favoriteicon1.png" alt="Favoritar">
+                    </button>
+                </li>
+                <li>
+                    <a href="https://example.com/9" target="_blank">Link 9</a>
+                    <button class="copy-btn" data-clipboard-text="https://example.com/9">
+                        <img src="icons/copyicon.png" alt="Copiar">
+                    </button>
+                    <button class="favorite-btn" data-link="https://example.com/9">
+                        <img src="icons/favoriteicon1.png" alt="Favoritar">
+                    </button>
+                </li>
+                <li>
+                    <a href="https://example.com/10" target="_blank">Link 10</a>
+                    <button class="copy-btn" data-clipboard-text="https://example.com/10">
+                        <img src="icons/copyicon.png" alt="Copiar">
+                    </button>
+                    <button class="favorite-btn" data-link="https://example.com/10">
+                        <img src="icons/favoriteicon1.png" alt="Favoritar">
+                    </button>
+                </li>
+            </ul>
+        </section>
+        <section class="category">
+            <h2>Arquivos</h2>
+            <ul>
+                <li>
+                    <img src="icons/foldericon.png" alt="Pasta">
+                    <a href="pasta/arquivo1" download class="file-name">Arquivo 1</a>
+                </li>
+                <li>
+                    <img src="icons/foldericon.png" alt="Pasta">
+                    <a href="pasta/arquivo2" download class="file-name">Arquivo 2</a>
+                </li>
+                <li>
+                    <img src="icons/foldericon.png" alt="Pasta">
+                    <a href="pasta/arquivo3" download class="file-name">Arquivo 3</a>
+                </li>
+            </ul>
+        </section>
+        <section class="history">
+            <h2>Histórico</h2>
+            <ul id="history-list"></ul>
+        </section>
+    </main>
+    <div id="message" class="hidden">Link copiado!</div>
+    <script src="script.js"></script>
+</body>
+</html>
